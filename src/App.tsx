@@ -210,65 +210,6 @@ export const App = () => {
 						/>
 					</>
 				)}
-				<div className={styles.Info}>
-					<p>
-						Click the <LockIcon /> icon to create your own schedule. When done,
-						click the <UnLockIcon /> and share the updated URL.
-					</p>
-					<h2>Tips</h2>
-					<p>
-						Schedules change! Share the URL to your <em>localschedule</em> using{' '}
-						<a
-							href="https://short.io/"
-							rel="noreferrer noopener"
-							target="_blank"
-						>
-							short.io
-						</a>{' '}
-						which allows edits to the URL it redirects to.
-					</p>
-					<p>
-						<a
-							href="https://www.notion.so/"
-							rel="noopener noreferrer"
-							target="_blank"
-						>
-							Notion
-						</a>{' '}
-						user? Use{' '}
-						<a
-							href={`${new URL(document.location.href).origin
-								}?schedule=${encodeURIComponent(`v2:${JSON.stringify(cfg)}`)}`}
-						>
-							this URL
-						</a>{' '}
-						to embed it on any page.
-					</p>
-					<h2>
-						Like <em>localschedule</em>?
-					</h2>
-					<p>
-						Please{' '}
-						<a
-							href={import.meta.env.PUBLIC_HOMEPAGE}
-							rel="noopener noreferrer"
-							target="_blank"
-							title={'Contribute to this project on GitHub'}
-						>
-							<StarIcon />
-						</a>{' '}
-						it in on{' '}
-						<a
-							href={import.meta.env.PUBLIC_HOMEPAGE}
-							rel="noopener noreferrer"
-							target="_blank"
-							title={'Contribute to this project on GitHub'}
-						>
-							GitHub
-						</a>
-						!
-					</p>
-				</div>
 			</main>
 			<Footer />
 		</>
